@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background: linear-gradient(135deg, #000000, #0a1f44);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background: rgb(218, 211, 211);
+  padding: 25px;
+  width: 350px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  text-align: center;
+  animation: fadeIn 0.4s ease;
+}
+h1, h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+label {
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+input[type=range] {
+  width: 100%;
+  margin-top: 5px;
+}
+button, .btn {
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+button:hover, .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+button:nth-child(3) {
+  background: #e74c3c;
+}
+.hasil {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background: #f8f9fa;
+  font-weight: bold;
+  animation: fadeIn 0.4s ease;
+}
+.progress {
+  height: 8px;
+  background: #eee;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  width: 0%;
+  transition: width 0.3s ease;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Fuzzy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h2> Fuzzy: Tingkat Prokrastinasi</h2>
+
+    <label>Frekuensi Menunda: <span id="f1">50</span></label>
+    <input type="range" id="menunda" min="0" max="100" value="50" oninput="updateLabel()">
+
+    <label>Distraksi: <span id="f2">50</span></label>
+    <input type="range" id="distraksi" min="0" max="100" value="50" oninput="updateLabel()">
+
+    <label>Motivasi: <span id="f3">50</span></label>
+    <input type="range" id="motivasi" min="0" max="100" value="50" oninput="updateLabel()">
+
+    <button onclick="hitungFuzzy()">Proses</button>
+
+    <div id="hasil" class="hasil"></div>
+
+    <a href="index.html">⬅ Kembali</a>
+  </div>
+
+  <script src="js/fuzzy.js"></script>
+</body>
+</html>
